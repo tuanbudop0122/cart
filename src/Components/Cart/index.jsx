@@ -32,22 +32,27 @@ class Cart extends Component {
       <div>
         <div>
           {/* Modal */}
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#modelId">
+            Open modal
+          </button>
           <div
             className="modal fade"
             id="modelId"
             tabIndex={-1}
             role="dialog"
             aria-labelledby="modelTitleId"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <div
               className="modal-dialog "
               style={{
                 maxWidth: 1000,
-                // backgroundImage:"url(${})"
+                // backgroundImage: "url(${})",
               }}
-              role="document"
-            >
+              role="document">
               <div className="modal-content">
                 <div className="modal-header">
                   <h5 className="modal-title">Giỏ Hàng</h5>
@@ -55,8 +60,7 @@ class Cart extends Component {
                     type="button"
                     className="close"
                     data-dismiss="modal"
-                    aria-label="Close"
-                  >
+                    aria-label="Close">
                     <span aria-hidden="true">×</span>
                   </button>
                 </div>
@@ -81,21 +85,18 @@ class Cart extends Component {
                           <td />
                           <td
                             style={{ fontSize: 30 }}
-                            className="font-weight-bold"
-                          >
+                            className="font-weight-bold">
                             Tổng Tiền
                           </td>
                           <td
                             style={{ fontSize: 30 }}
-                            className="font-weight-bold"
-                          >
+                            className="font-weight-bold">
                             {this.calcToTalAmount()}$
                           </td>
                           <td>
                             <button
                               style={{ fontSize: 30 }}
-                              className="btn btn-info"
-                            >
+                              className="btn btn-info">
                               Thanh Toán
                             </button>
                           </td>
@@ -108,8 +109,7 @@ class Cart extends Component {
                   <button
                     type="button"
                     className="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
+                    data-dismiss="modal">
                     Close
                   </button>
                   <button type="button" className="btn btn-primary">

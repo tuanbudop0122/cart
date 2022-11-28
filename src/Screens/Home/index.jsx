@@ -8,7 +8,6 @@ class HomePage extends Component {
     cart: [],
   };
   putToCart = (prod) => {
-    console.log(prod, "prod");
     const cloneCart = [...this.state.cart];
     const cartItem = {
       product: prod,
@@ -32,7 +31,6 @@ class HomePage extends Component {
     );
   };
   deleteCartItem = (id) => {
-    console.log("id delete", id);
     //clone this.state.cart
     const cloneCart = [...this.state.cart];
     //tìm vị trí qua id
