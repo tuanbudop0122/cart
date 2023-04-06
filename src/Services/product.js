@@ -3,13 +3,13 @@ class ProductService {
   fetchProduct() {
     return Axios({
       method: "GET",
-      url: "https://5f1d4b9f39d95a0016953dc8.mockapi.io/api/PRODUCTS/",
+      url: "https://5f2c1785ffc88500167b8a4b.mockapi.io/api/product/product",
     });
   }
   fetchDetail(id) {
     return Axios({
       method: "GET",
-      url: "https://5f1d4b9f39d95a0016953dc8.mockapi.io/api/PRODUCTS/" + id,
+      url: "https://5f2c1785ffc88500167b8a4b.mockapi.io/api/product/product/" + id,
     });
   }
 }
